@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Takoyaki";
+    font-style: "normal";
+    src: url("/public/fonts/TAKOYAKI.ttf") format("ttf");
+  }
+
+  @font-face {
+    font-family: "Champ";
+    src: url("/public/fonts/champ.ttf");
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Champbold";
+    src: url("/public/fonts/champBold.ttf");
+    font-style: normal;
+    font-weight: bold;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-family: "Champbold";
+  font-weight: 900;
+  font-size: 59px;
+}
+h2 {
+  font-family: "Champ";
+  font-weight: 900;
+  font-size: 59px;
+}
+h3 {
+  font-family: "Takoyaki";
+  font-weight: 900;
+  font-size: 59px;
 }
